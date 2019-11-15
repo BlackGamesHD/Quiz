@@ -42,6 +42,7 @@
             this.btnSim.TabIndex = 0;
             this.btnSim.Text = "Sim";
             this.btnSim.UseVisualStyleBackColor = true;
+            this.btnSim.Click += new System.EventHandler(this.btnSim_Click);
             // 
             // btnNao
             // 
@@ -51,6 +52,7 @@
             this.btnNao.TabIndex = 1;
             this.btnNao.Text = "Não";
             this.btnNao.UseVisualStyleBackColor = true;
+            this.btnNao.Click += new System.EventHandler(this.btnNao_Click);
             // 
             // label1
             // 

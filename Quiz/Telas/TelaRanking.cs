@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace Quiz
 {
-    public partial class TelaFinal : Form
+    public partial class TelaRanking : Form
     {
-        public TelaFinal()
+        public TelaRanking()
         {
             InitializeComponent();
-            label1.Text = "Você terminou o quiz e acertou um total de 0 questões, deseja enviar sua pontuação?(Se sim, preencha o campo abaixo com seu nome])";
         }
+
+       
+
+        private void TelaRanking_Load(object sender, EventArgs e)
+        {
+            this.leaderboardTableAdapter.Fill(this.quiz_AloDataSet.leaderboard);
+        }
+
     }
 }

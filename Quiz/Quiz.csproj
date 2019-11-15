@@ -46,32 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="DAO\DAO.cs" />
+    <Compile Include="Quiz_AloDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Quiz_AloDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaCadastroQuestao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\TelaCadastroQuestao.Designer.cs">
+      <DependentUpon>TelaCadastroQuestao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perguntas.cs">
+    <Compile Include="Telas\TelaMenuInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Perguntas.Designer.cs">
-      <DependentUpon>Perguntas.cs</DependentUpon>
+    <Compile Include="Telas\TelaMenuInicio.Designer.cs">
+      <DependentUpon>TelaMenuInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaPerguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaPerguntas.Designer.cs">
+      <DependentUpon>TelaPerguntas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TelaFinal.cs">
+    <Compile Include="Telas\TelaFinal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaFinal.Designer.cs">
+    <Compile Include="Telas\TelaFinal.Designer.cs">
       <DependentUpon>TelaFinal.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Telas\TelaRanking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaRanking.Designer.cs">
+      <DependentUpon>TelaRanking.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\TelaCadastroQuestao.resx">
+      <DependentUpon>TelaCadastroQuestao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perguntas.resx">
-      <DependentUpon>Perguntas.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\TelaMenuInicio.resx">
+      <DependentUpon>TelaMenuInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaPerguntas.resx">
+      <DependentUpon>TelaPerguntas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,8 +102,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TelaFinal.resx">
+    <EmbeddedResource Include="Telas\TelaFinal.resx">
       <DependentUpon>TelaFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaRanking.resx">
+      <DependentUpon>TelaRanking.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,6 +117,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Quiz_AloDataSet.xsc">
+      <DependentUpon>Quiz_AloDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Quiz_AloDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Quiz_AloDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Quiz_AloDataSet.xss">
+      <DependentUpon>Quiz_AloDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

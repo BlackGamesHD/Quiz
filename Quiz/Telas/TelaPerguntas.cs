@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace Quiz
 {
-    public partial class Perguntas : Form
+    public partial class TelaPerguntas : Form
     {
-
+        public static int acertos = 0;
         int contador=0, aleatorio, contador_respondidas=0;
         int[] id_questoes = new int[11];
 
-        public Perguntas()
+        public TelaPerguntas()
         {
             InitializeComponent();
             obter_id_questoes();
@@ -41,14 +41,23 @@ namespace Quiz
             {
                 Verificar_resposta();
                 PuxarDadosBD(id_questoes[contador_respondidas + 1]);
+            }else if (contador_respondidas == 9)
+            {
+                Verificar_resposta();
+                Form final = new TelaFinal();
+                final.Show();
+                this.Close();
             }
             else
             {
-                Form final = new TelaFinal();
-                final.Show();
-                Form esse = new Perguntas();
-                esse.Close();
+                MessageBox.Show("Você terminou o quiz");
+                this.Close();
             }
+        }
+
+        private void RegistrarAcerto()
+        {
+            acertos++;
         }
 
         private void Verificar_resposta()
@@ -58,6 +67,7 @@ namespace Quiz
                 if (DAO.correta == 1)
                 {
                     MessageBox.Show("Resposta correta");
+                    RegistrarAcerto();
                 }
                 else
                 {
@@ -70,6 +80,7 @@ namespace Quiz
                 if (DAO.correta == 2)
                 {
                     MessageBox.Show("Resposta correta");
+                    RegistrarAcerto();
                 }
                 else
                 {
@@ -82,6 +93,7 @@ namespace Quiz
                 if (DAO.correta == 3)
                 {
                     MessageBox.Show("Resposta correta");
+                    RegistrarAcerto();
                 }
                 else
                 {
@@ -94,6 +106,7 @@ namespace Quiz
                 if (DAO.correta == 4)
                 {
                     MessageBox.Show("Resposta correta");
+                    RegistrarAcerto();
                 }
                 else
                 {

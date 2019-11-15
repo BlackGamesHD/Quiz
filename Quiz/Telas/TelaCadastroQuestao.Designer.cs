@@ -1,6 +1,6 @@
 ﻿namespace Quiz
 {
-    partial class Form1
+    partial class TelaCadastroQuestao
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,14 +30,14 @@
         {
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.txtAlternativaD = new System.Windows.Forms.TextBox();
-            this.txtAlternativaC = new System.Windows.Forms.TextBox();
-            this.txtAlternativaB = new System.Windows.Forms.TextBox();
             this.txtAlternativaA = new System.Windows.Forms.TextBox();
+            this.txtAlternativaB = new System.Windows.Forms.TextBox();
+            this.txtAlternativaC = new System.Windows.Forms.TextBox();
+            this.txtAlternativaD = new System.Windows.Forms.TextBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.txtQuestao = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -49,7 +49,7 @@
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 0;
-            this.btnCadastrar.Text = "button1";
+            this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -70,35 +70,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alternativas";
             // 
-            // radioButton1
+            // txtAlternativaA
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 44);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(14, 13);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtAlternativaA.Location = new System.Drawing.Point(27, 44);
+            this.txtAlternativaA.Name = "txtAlternativaA";
+            this.txtAlternativaA.Size = new System.Drawing.Size(605, 20);
+            this.txtAlternativaA.TabIndex = 7;
             // 
-            // radioButton2
+            // txtAlternativaB
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 93);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(14, 13);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.txtAlternativaB.Location = new System.Drawing.Point(28, 93);
+            this.txtAlternativaB.Name = "txtAlternativaB";
+            this.txtAlternativaB.Size = new System.Drawing.Size(604, 20);
+            this.txtAlternativaB.TabIndex = 6;
             // 
-            // radioButton3
+            // txtAlternativaC
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 144);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(14, 13);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.txtAlternativaC.Location = new System.Drawing.Point(28, 144);
+            this.txtAlternativaC.Name = "txtAlternativaC";
+            this.txtAlternativaC.Size = new System.Drawing.Size(604, 20);
+            this.txtAlternativaC.TabIndex = 5;
+            // 
+            // txtAlternativaD
+            // 
+            this.txtAlternativaD.Location = new System.Drawing.Point(27, 193);
+            this.txtAlternativaD.Name = "txtAlternativaD";
+            this.txtAlternativaD.Size = new System.Drawing.Size(604, 20);
+            this.txtAlternativaD.TabIndex = 4;
             // 
             // radioButton4
             // 
@@ -110,33 +108,35 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // txtAlternativaD
+            // radioButton3
             // 
-            this.txtAlternativaD.Location = new System.Drawing.Point(27, 193);
-            this.txtAlternativaD.Name = "txtAlternativaD";
-            this.txtAlternativaD.Size = new System.Drawing.Size(604, 20);
-            this.txtAlternativaD.TabIndex = 4;
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(7, 144);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(14, 13);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // txtAlternativaC
+            // radioButton2
             // 
-            this.txtAlternativaC.Location = new System.Drawing.Point(28, 144);
-            this.txtAlternativaC.Name = "txtAlternativaC";
-            this.txtAlternativaC.Size = new System.Drawing.Size(604, 20);
-            this.txtAlternativaC.TabIndex = 5;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(7, 93);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(14, 13);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // txtAlternativaB
+            // radioButton1
             // 
-            this.txtAlternativaB.Location = new System.Drawing.Point(28, 93);
-            this.txtAlternativaB.Name = "txtAlternativaB";
-            this.txtAlternativaB.Size = new System.Drawing.Size(604, 20);
-            this.txtAlternativaB.TabIndex = 6;
-            // 
-            // txtAlternativaA
-            // 
-            this.txtAlternativaA.Location = new System.Drawing.Point(27, 44);
-            this.txtAlternativaA.Name = "txtAlternativaA";
-            this.txtAlternativaA.Size = new System.Drawing.Size(605, 20);
-            this.txtAlternativaA.TabIndex = 7;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(6, 44);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // txtQuestao
             // 
@@ -155,7 +155,7 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Questão";
             // 
-            // Form1
+            // TelaCadastroQuestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,7 +164,7 @@
             this.Controls.Add(this.txtQuestao);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCadastrar);
-            this.Name = "Form1";
+            this.Name = "TelaCadastroQuestao";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

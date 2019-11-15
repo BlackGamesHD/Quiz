@@ -12,11 +12,13 @@ D:\fas\Quiz\Quiz\bin\Debug\Quiz.exe.config
 D:\fas\Quiz\Quiz\bin\Debug\Quiz.exe
 D:\fas\Quiz\Quiz\bin\Debug\Quiz.pdb
 D:\fas\Quiz\Quiz\obj\Debug\Quiz.csprojAssemblyReference.cache
-D:\fas\Quiz\Quiz\obj\Debug\Quiz.Form1.resources
-D:\fas\Quiz\Quiz\obj\Debug\Quiz.Perguntas.resources
 D:\fas\Quiz\Quiz\obj\Debug\Quiz.Properties.Resources.resources
 D:\fas\Quiz\Quiz\obj\Debug\Quiz.csproj.GenerateResource.cache
 D:\fas\Quiz\Quiz\obj\Debug\Quiz.csproj.CoreCompileInputs.cache
 D:\fas\Quiz\Quiz\obj\Debug\Quiz.exe
 D:\fas\Quiz\Quiz\obj\Debug\Quiz.pdb
 D:\fas\Quiz\Quiz\obj\Debug\Quiz.TelaFinal.resources
+D:\fas\Quiz\Quiz\obj\Debug\Quiz.TelaCadastroQuestao.resources
+D:\fas\Quiz\Quiz\obj\Debug\Quiz.TelaMenuInicio.resources
+D:\fas\Quiz\Quiz\obj\Debug\Quiz.TelaPerguntas.resources
+D:\fas\Quiz\Quiz\obj\Debug\Quiz.TelaRanking.resources

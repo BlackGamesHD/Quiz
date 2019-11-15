@@ -1,6 +1,6 @@
 ﻿namespace Quiz
 {
-    partial class Perguntas
+    partial class TelaPerguntas
     {
         /// <summary>
         /// Required designer variable.
@@ -47,9 +47,9 @@
             this.lblQuestao.AutoSize = true;
             this.lblQuestao.Location = new System.Drawing.Point(13, 24);
             this.lblQuestao.Name = "lblQuestao";
-            this.lblQuestao.Size = new System.Drawing.Size(235, 13);
+            this.lblQuestao.Size = new System.Drawing.Size(258, 13);
             this.lblQuestao.TabIndex = 0;
-            this.lblQuestao.Text = "Suposta pergunta... Blah... Blah.... Blah... Fodeu";
+            this.lblQuestao.Text = "Suposta pergunta... Blah... Blah.... Blah... Deu errado";
             // 
             // groupBox1
             // 
@@ -73,27 +73,27 @@
             this.lblAlterD.AutoSize = true;
             this.lblAlterD.Location = new System.Drawing.Point(28, 155);
             this.lblAlterD.Name = "lblAlterD";
-            this.lblAlterD.Size = new System.Drawing.Size(14, 13);
+            this.lblAlterD.Size = new System.Drawing.Size(13, 13);
             this.lblAlterD.TabIndex = 7;
-            this.lblAlterD.Text = "A";
+            this.lblAlterD.Text = "d";
             // 
             // lblAlterC
             // 
             this.lblAlterC.AutoSize = true;
             this.lblAlterC.Location = new System.Drawing.Point(28, 116);
             this.lblAlterC.Name = "lblAlterC";
-            this.lblAlterC.Size = new System.Drawing.Size(15, 13);
+            this.lblAlterC.Size = new System.Drawing.Size(13, 13);
             this.lblAlterC.TabIndex = 6;
-            this.lblAlterC.Text = "D";
+            this.lblAlterC.Text = "c";
             // 
             // lblAlterB
             // 
             this.lblAlterB.AutoSize = true;
             this.lblAlterB.Location = new System.Drawing.Point(28, 76);
             this.lblAlterB.Name = "lblAlterB";
-            this.lblAlterB.Size = new System.Drawing.Size(15, 13);
+            this.lblAlterB.Size = new System.Drawing.Size(13, 13);
             this.lblAlterB.TabIndex = 5;
-            this.lblAlterB.Text = "O";
+            this.lblAlterB.Text = "b";
             // 
             // lblAlterA
             // 
@@ -102,7 +102,7 @@
             this.lblAlterA.Name = "lblAlterA";
             this.lblAlterA.Size = new System.Drawing.Size(13, 13);
             this.lblAlterA.TabIndex = 4;
-            this.lblAlterA.Text = "F";
+            this.lblAlterA.Text = "a";
             // 
             // radioButton4
             // 
