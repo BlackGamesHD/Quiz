@@ -82,7 +82,7 @@
             this.Controls.Add(this.btnNao);
             this.Controls.Add(this.btnSim);
             this.Name = "TelaFinal";
-            this.Text = "TelaFinal";
+            this.Text = "Resultado";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -21,6 +21,8 @@ namespace Quiz
             InitializeComponent();
             obter_id_questoes();
             PuxarDadosBD(id_questoes[0]);
+            lblQuestao.MaximumSize = new Size(500, 0);
+            lblQuestao.AutoSize = true;
         }
 
         private void PuxarDadosBD(int id_questao)

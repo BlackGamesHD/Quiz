@@ -165,7 +165,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCadastrar);
             this.Name = "TelaCadastroQuestao";
-            this.Text = "Form1";
+            this.Text = "Cadastrar questão";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

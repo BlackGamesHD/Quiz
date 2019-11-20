@@ -75,7 +75,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "TelaMenuInicio";
-            this.Text = "Menu";
+            this.Text = "SHOW DE PROGRAMAÇÃO";
             this.ResumeLayout(false);
 
         }

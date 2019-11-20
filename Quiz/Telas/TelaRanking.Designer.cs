@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.leaderboardBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quiz_AloDataSet = new Quiz.Quiz_AloDataSet();
             this.leaderboardTableAdapter = new Quiz.Quiz_AloDataSetTableAdapters.leaderboardTableAdapter();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leaderboardBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quiz_AloDataSet)).BeginInit();
@@ -56,20 +56,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(243, 410);
             this.dataGridView1.TabIndex = 0;
             // 
-            // leaderboardBindingSource
-            // 
-            this.leaderboardBindingSource.DataMember = "leaderboard";
-            this.leaderboardBindingSource.DataSource = this.quiz_AloDataSet;
-            // 
-            // quiz_AloDataSet
-            // 
-            this.quiz_AloDataSet.DataSetName = "Quiz_AloDataSet";
-            this.quiz_AloDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // leaderboardTableAdapter
-            // 
-            this.leaderboardTableAdapter.ClearBeforeFill = true;
-            // 
             // nomeDataGridViewTextBoxColumn
             // 
             this.nomeDataGridViewTextBoxColumn.DataPropertyName = "nome";
@@ -85,6 +71,20 @@
             this.scoreDataGridViewTextBoxColumn.Name = "scoreDataGridViewTextBoxColumn";
             this.scoreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // leaderboardBindingSource
+            // 
+            this.leaderboardBindingSource.DataMember = "leaderboard";
+            this.leaderboardBindingSource.DataSource = this.quiz_AloDataSet;
+            // 
+            // quiz_AloDataSet
+            // 
+            this.quiz_AloDataSet.DataSetName = "Quiz_AloDataSet";
+            this.quiz_AloDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // leaderboardTableAdapter
+            // 
+            this.leaderboardTableAdapter.ClearBeforeFill = true;
+            // 
             // TelaRanking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -92,7 +92,7 @@
             this.ClientSize = new System.Drawing.Size(268, 450);
             this.Controls.Add(this.dataGridView1);
             this.Name = "TelaRanking";
-            this.Text = "TelaRanking";
+            this.Text = "Ranking";
             this.Load += new System.EventHandler(this.TelaRanking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leaderboardBindingSource)).EndInit();
